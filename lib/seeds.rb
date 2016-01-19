@@ -1,6 +1,15 @@
 require 'pg'
 
-conn = PG.connect(dbname: "portfolio")
+if ENV["RACK_ENV"] == 'production'
+  conn = PG.connect(
+    dbname: ENV["POSTGRES_DBNAME"],
+      host: ENV["POSTGRES_HOST"],
+  password: ENV["POSTGRES_PASS"],
+      user: ENV["POSTGRES_USER"]
+    )
+else
+  conn = PG.connect(dbname: "portfolio")
+end
 
 conn.exec("DROP TABLE IF EXISTS contact_data")
 
