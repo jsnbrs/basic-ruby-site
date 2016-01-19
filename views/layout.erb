@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/js/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <title>My Website</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header clearfix">
+      <a href="/" class="logo"></a>
+      <ul class="main_navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#">Portfolio</a>
+          <ul class="sub_main_navigation">
+            <li><a href="#">HTML/CSS</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">Rails</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="/contact">Contact</a>
+          <ul class="sub_main_navigation">
+            <li><a href="#">Email</a></li>
+            <li><a href="/contact">Contact Form</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <%= yield %>
+    <div class="footer clearfix">
+      <p>&copy; 2015 Jason Booras</p>
+      <ul class="footer_navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
