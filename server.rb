@@ -8,6 +8,10 @@ module Portfolio
       erb :contact
     end
 
+    get "/about" do
+      erb :about
+    end
+
     post "/contact" do
       name = params["name"]
       email = params["email"]

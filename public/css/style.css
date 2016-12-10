@@ -59,7 +59,6 @@ table {
 /* Custom Styles */
 
 body {
-  background: pink;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 17px;
 }
@@ -79,7 +78,6 @@ div.wrapper {
 .header {
   padding: 30px;
   border-bottom: 8px solid #000;
-
 }
 
 .main_content {
