@@ -4,12 +4,16 @@ module Portfolio
       erb :index
     end
 
+    get "/about" do
+      erb :about
+    end
+
     get "/contact" do
       erb :contact
     end
 
-    get "/about" do
-      erb :about
+    get "/services" do
+      erb :services
     end
 
     post "/contact" do
