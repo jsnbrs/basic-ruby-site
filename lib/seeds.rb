@@ -22,8 +22,8 @@ conn.exec("CREATE TABLE contact_data(
 )
 
 conn.exec("INSERT INTO contact_data (name, email, message) VALUES (
-    'Bryan',
-    'bryan.mytko@generalassemb.ly',
+    'Jason',
+    'jasonbooras@gmail.com',
     'This is a test message from the seeded data'
   )"
 )
