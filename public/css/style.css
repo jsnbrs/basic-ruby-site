@@ -63,7 +63,8 @@ body {
   font-size: 17px;
 }
 
-a.logo { display: block;
+a.logo { 
+  display: block;
   background: url(../img/logo.png) 0 0 no-repeat;
   height: 76px;
   width: 60px;
@@ -71,6 +72,7 @@ a.logo { display: block;
 }
 
 div.wrapper {
+  background: #ffffff;
   width: 980px;
   margin: 0 auto;
 }
